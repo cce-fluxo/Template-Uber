@@ -14,8 +14,8 @@ import * as yup from "yup";
 import { Formik } from "formik";
 
 import { SafeAreaView } from "react-native-safe-area-context";
-import { colors } from "./src/constants/theme";
-import { screenHeight, screenWidth } from "./src/constants/dimensions";
+import { colors } from "../../constants/theme";
+import { screenHeight, screenWidth } from "../../constants/dimensions";
 //import { useAuth } from "../../../context/auth";
 
 export default function SignInScreen({ navigation }) {
