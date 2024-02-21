@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "eslint-plugin-import": "^2.29.1",
     "expo": "~50.0.7",
     "expo-status-bar": "~1.11.1",
     "formik": "^2.4.5",
@@ -20,6 +21,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
     "tailwindcss": "3.3.2"
   },
   "private": true
