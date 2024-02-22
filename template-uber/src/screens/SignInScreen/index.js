@@ -18,7 +18,7 @@ import { colors } from "../../constants/theme";
 import { screenHeight, screenWidth } from "../../constants/dimensions";
 //import { useAuth } from "../../../context/auth";
 
-export default function SignInScreen({ navigation }) {
+export default function SignInScreen( navigation ) {
   const [loading, setLoading] = useState(false);
 
   //const { signIn } = useAuth(); Descomentar quando autenticação estiver pronta
