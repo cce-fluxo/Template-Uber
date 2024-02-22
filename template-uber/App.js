@@ -1,20 +1,29 @@
+import React, { Platform, View } from "react-native";
+import PreSignUpScreen from "./src/screens/PreSignUpScreen";
+import SignInScreen from "./src/screens/SignInScreen";
+import FlashMessage from "react-native-flash-message";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+      <StatusBar style="default" />
+      <SignInScreen></SignInScreen>
+      {Platform.OS === "ios" ? (
+        <FlashMessage
+          //talvez aumentar a margem do topo pro android
+          floating={true}
+          style={{ alignItems: "center" }}
+          titleStyle={{ fontWeight: "bold" }}
+        />
+      ) : (
+        <FlashMessage
+          //talvez aumentar a margem do topo pro android
+          floating={true}
+          style={{ alignItems: "center", marginTop: getStatusBarHeight() }}
+          titleStyle={{ fontWeight: "bold" }}
+        />
+      )}
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
