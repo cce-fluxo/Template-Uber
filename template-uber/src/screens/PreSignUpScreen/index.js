@@ -3,28 +3,10 @@ import { View, StyleSheet, TouchableOpacity, Text, Image } from "react-native";
 import { showMessage } from "react-native-flash-message";
 import { colors } from "../../constants/theme";
 import { screenHeight } from "../../constants/dimensions/index";
-import * as Permissions from "expo-permissions";
 import * as Linking from "expo-linking";
 import { Camera } from "expo-camera";
 
 const PreSignUpScreen = (navigation) => {
-  const handleNavigation = async () => {
-    const { status } = await Camera.requestCameraPermissionsAsync();
-    if (status === "granted") {
-      console.log(status);
-      navigation.navigate("Profile Picture");
-    } else {
-      showMessage({
-        message: "Permissão para usar a câmera é necessária para criar a conta",
-        description:
-          "Clique aqui para permitir que o aplicativo tenha acesso a sua câmera",
-        type: "warning",
-        icon: "warning",
-        onPress: () => Linking.openSettings(),
-      });
-    }
-  };
-
   return (
     <View style={styles.background}>
       <Image style={styles.image} source="" />

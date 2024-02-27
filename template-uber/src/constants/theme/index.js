@@ -9,11 +9,11 @@ export const colors = {
   //primary: '#1f73b7',  // zendesk 2
   //primary: '#00ACEE', // twitter
   //primary: '#1a8dc2', // twitter2
-  primary: "#009cd9", // twitter menos saturado
+  primary: "#F0F0F0", // twitter menos saturado
   darkPrimary: "#00729e",
   lightPrimary: "#E1F5FD",
   accent: "#00ACEE",
-  inputBackground: "rgba(195, 197, 199, 0.2)",
+  inputBackground: "#F0F0F0",
   inputText: "#9BA6A5",
   inputErrorBackground: "rgba(255, 148, 148, 0.2)",
   inputErrorText: "#FF9494",

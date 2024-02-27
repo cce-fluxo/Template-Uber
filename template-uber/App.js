@@ -1,14 +1,14 @@
 import React, { Platform, View } from "react-native";
-import PreSignUpScreen from "./src/screens/PreSignUpScreen";
-import SignInScreen from "./src/screens/SignInScreen";
+import SignUpScreen from "./src/screens/SignUpScreen/index";
 import FlashMessage from "react-native-flash-message";
 import { StatusBar } from "expo-status-bar";
+import { getStatusBarHeight } from "react-native-status-bar-height";
 
 export default function App() {
   return (
-    <View>
+    <View className="flex-1">
       <StatusBar style="default" />
-      <SignInScreen></SignInScreen>
+      <SignUpScreen></SignUpScreen>
       {Platform.OS === "ios" ? (
         <FlashMessage
           //talvez aumentar a margem do topo pro android

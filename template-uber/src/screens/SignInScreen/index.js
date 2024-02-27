@@ -21,6 +21,10 @@ import { screenHeight, screenWidth } from "../../constants/dimensions";
 export default function SignInScreen(navigation) {
   const [loading, setLoading] = useState(false);
 
+  if (loading) {
+    setLoading(true);
+  } //Remover no final
+
   //const { signIn } = useAuth(); Descomentar quando autenticação estiver pronta
 
   const loginValidationSchema = yup.object().shape({
