@@ -33,7 +33,7 @@ const SignUpScreen = (navigation, route) => {
   const [hidden, setHidden] = useState(true);
   const [confirmHidden, setConfirmHidden] = useState(true);
 
-  //const { type } = route.params;
+  //const { type } = route.params; descomentar quando type estiver pronto
 
   var addressSearch = {
     rua: "",
@@ -100,7 +100,6 @@ const SignUpScreen = (navigation, route) => {
     data.state = state;
     data.address = address;
     data.city = city;
-    // data.empresa_id = companieId;
 
     console.log(data);
     try {
@@ -128,7 +127,6 @@ const SignUpScreen = (navigation, route) => {
 
   async function searchAddress(cep, handleRua) {
     await getAddress(cep, addressSearch);
-    // console.log(addressSearch);
     setAddress(addressSearch.rua);
     setCity(addressSearch.cidade);
     setState(addressSearch.estado);
@@ -137,7 +135,6 @@ const SignUpScreen = (navigation, route) => {
 
   const verifyForSearchAddress = (value) => {
     if (value.length >= 9) {
-      // console.log(value);
       searchAddress(value);
     }
   };
@@ -169,7 +166,7 @@ const SignUpScreen = (navigation, route) => {
           state: state,
           password: "",
           confirmPassword: "",
-          //tipo: type,
+          //tipo: type, decomentar quando type estiver pronto
           cpf: "",
           img_url: "sfgdfs",
         }}

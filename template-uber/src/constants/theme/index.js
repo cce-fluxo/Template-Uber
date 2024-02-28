@@ -9,7 +9,7 @@ export const colors = {
   //primary: '#1f73b7',  // zendesk 2
   //primary: '#00ACEE', // twitter
   //primary: '#1a8dc2', // twitter2
-  primary: "#F0F0F0", // twitter menos saturado
+  primary: "#009cd9", // twitter menos saturado
   darkPrimary: "#00729e",
   lightPrimary: "#E1F5FD",
   accent: "#00ACEE",
